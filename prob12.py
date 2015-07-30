@@ -1,4 +1,5 @@
-
+import time
+time.clock()
 curTri = 1
 adder = 2
 
@@ -22,6 +23,7 @@ while True:
         numfactors*=x+1
     if numfactors > 500:
         print str(curTri) + " has > 500 factors"
+        print time.clock();
         break
     curTri+=adder
     adder+=1
